@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+
+.container {
+    margin: auto;
+    margin-top: 1rem;
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.1rem solid white;
+    border-radius: 0.4rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid white;
+    border-radius: 0.4rem;
+    padding: 1rem;
+}
+
+fieldset > * {
+    margin: 0.3rem;
+}
+
+fieldset > fieldset {
+    border: 0.1rem solid white;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.4rem;
+    padding-left: 1rem;
+}
+
+button {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.msg {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.msg > p {
+    margin-right: 0.3rem;
+    width: max-content;
+}
+
+.display:nth-child(1) {
+    margin-left: 0;
+}
+
+b,
+i {
+    color: lime;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+}

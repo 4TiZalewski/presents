@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wylosuj prezent</h1>
+        </header>
+        <main>
+            <fieldset>
+                <label for="present">Nazwa prezentu:</label>
+                <input type="text" name="present" id="present">
+                <label for="present-category">Kategoria prezentu:</label>
+                <select name="category" id="present-category">
+                    <option value="" default></option>
+                    <option value="book">Książka</option>
+                    <option value="board_game">Gra planszowa</option>
+                    <option value="video_game">Gra komputerowa</option>
+                </select>
+                <button id="submit-present">Dodaj prezent do listy</button>
+            </fieldset>
+            <fieldset>
+                <label for="name">Jak nasz na imię?</label>
+                <input type="text" name="name" id="name">
+                <fieldset>
+                    <legend>Co chciałbyś otrzymać jako prezent?</legend>
+                    <label for="book">
+                        <input type="radio" name="loser-will" id="book" value="book">
+                        Książkę
+                    </label>
+                    <label for="book">
+                        <input type="radio" name="loser-will" id="board_game" value="board_game">
+                        Gra planszową
+                    </label>
+                    <label for="book">
+                        <input type="radio" name="loser-will" id="computer_game" value="computer_game">
+                        Gra komputerową
+                    </label>
+                    <label for="everything">
+                        <input type="radio" name="loser-will" id="everything" value="everything">
+                        Wszystko jedno
+                    </label>
+                </fieldset>
+                <button id="submit-name">Losuj prezent</button>
+            </fieldset>
+        </main>
+        <div id="display">
+            
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
